@@ -1,0 +1,15 @@
+#N canvas 1029 196 708 330 12;
+#X obj 25 57 s START, f 9;
+#X obj 137 59 pd_bewegungflaeche;
+#X obj 137 84 pd_dacflaeche;
+#X obj 137 111 pd_flaechenpresets;
+#X obj 136 136 pd_inputflaechen;
+#X obj 25 21 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 136 163 pd_interviewdac;
+#X obj 137 191 pd_interviewread;
+#X text 272 58 Layer1 Flächen Bewegungen;
+#X text 272 82 Layer1 DAC;
+#X obj 138 217 pd_aehms;
+#X obj 138 243 pd_layer4;
+#X connect 5 0 0 0;

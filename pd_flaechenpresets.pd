@@ -1,0 +1,151 @@
+#N canvas 704 228 1337 988 12;
+#X obj 459 588 s liste, f 8;
+#X text 10 10 Sendet Listen an;
+#X obj 433 38 s liste;
+#X msg 433 11 ..., f 60;
+#X text 8 40 Ein Bewegungspreset besteht aus bis zu 44 Baumnummern
+und einer Stoppzahl am Ende >25;
+#X text 13 78 Die Listen werden in dreiergruppen ausgewerter z.B. 1
+2 3 / 2 3 4 / 3 4 5 / 5 6 7 -> Schaltet immer einen baum weiter und
+den "letzten" Baum der Reihe aus . 3 sec ramp up/down Zeit;
+#X obj 256 251 r flaecherestart;
+#X obj 208 288 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 208 322 random 10;
+#X obj 208 423 select 1 2 3 4 5 6 7 8 9 10;
+#X obj 208 346 + 1;
+#X text 107 342 Randomclock;
+#X msg 459 523 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 583 614 s reset;
+#X obj 583 590 delay 5;
+#X obj 583 567 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 455 743 s liste;
+#X msg 455 669 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 583 766 s reset;
+#X obj 583 742 delay 5;
+#X obj 583 719 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X floatatom 208 370 5 0 0 0 - - - 0;
+#X obj 458 903 s liste;
+#X msg 458 840 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 582 931 s reset;
+#X obj 582 907 delay 5;
+#X obj 582 884 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 458 1059 s liste;
+#X msg 458 992 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 582 1083 s reset;
+#X obj 582 1059 delay 5;
+#X obj 582 1036 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 458 1233 s liste;
+#X msg 458 1162 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+21 22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 582 1253 s reset;
+#X obj 582 1229 delay 5;
+#X obj 582 1206 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 458 1389 s liste;
+#X msg 458 1314 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+21 22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 582 1405 s reset;
+#X obj 582 1381 delay 5;
+#X obj 582 1358 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 457 1542 s liste;
+#X msg 457 1479 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+21 22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 581 1570 s reset;
+#X obj 581 1546 delay 5;
+#X obj 581 1523 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 457 1703 s liste;
+#X msg 457 1631 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+21 22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 581 1722 s reset;
+#X obj 581 1698 delay 5;
+#X obj 581 1675 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 457 1857 s liste;
+#X msg 457 1794 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+21 22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 581 1885 s reset;
+#X obj 581 1861 delay 5;
+#X obj 581 1838 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 457 2008 s liste;
+#X msg 457 1946 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+21 22 23 24 24 23 21 20 19 18 17 16 15 14 13 99;
+#X obj 581 2037 s reset;
+#X obj 581 2013 delay 5;
+#X obj 581 1990 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 199 251 r START;
+#X obj 130 520 print neues preset fuer FLAECHE;
+#X obj 208 396 t b f;
+#X obj 361 337 print bangfuerpresets;
+#X connect 3 0 2 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 0 65 0;
+#X connect 8 0 10 0;
+#X connect 9 0 58 0;
+#X connect 9 1 53 0;
+#X connect 9 2 48 0;
+#X connect 9 3 43 0;
+#X connect 9 4 38 0;
+#X connect 9 5 33 0;
+#X connect 9 6 28 0;
+#X connect 9 7 23 0;
+#X connect 9 8 17 0;
+#X connect 9 9 12 0;
+#X connect 10 0 21 0;
+#X connect 12 0 15 0;
+#X connect 12 0 0 0;
+#X connect 14 0 13 0;
+#X connect 15 0 14 0;
+#X connect 17 0 20 0;
+#X connect 17 0 16 0;
+#X connect 19 0 18 0;
+#X connect 20 0 19 0;
+#X connect 21 0 64 0;
+#X connect 23 0 26 0;
+#X connect 23 0 22 0;
+#X connect 25 0 24 0;
+#X connect 26 0 25 0;
+#X connect 28 0 31 0;
+#X connect 28 0 27 0;
+#X connect 30 0 29 0;
+#X connect 31 0 30 0;
+#X connect 33 0 36 0;
+#X connect 33 0 32 0;
+#X connect 35 0 34 0;
+#X connect 36 0 35 0;
+#X connect 38 0 41 0;
+#X connect 38 0 37 0;
+#X connect 40 0 39 0;
+#X connect 41 0 40 0;
+#X connect 43 0 46 0;
+#X connect 43 0 42 0;
+#X connect 45 0 44 0;
+#X connect 46 0 45 0;
+#X connect 48 0 51 0;
+#X connect 48 0 47 0;
+#X connect 50 0 49 0;
+#X connect 51 0 50 0;
+#X connect 53 0 56 0;
+#X connect 53 0 52 0;
+#X connect 55 0 54 0;
+#X connect 56 0 55 0;
+#X connect 58 0 61 0;
+#X connect 58 0 57 0;
+#X connect 60 0 59 0;
+#X connect 61 0 60 0;
+#X connect 62 0 7 0;
+#X connect 64 1 9 0;
+#X connect 64 1 63 0;
